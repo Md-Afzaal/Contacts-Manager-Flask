@@ -78,7 +78,7 @@ def add_contacts():
             return redirect('/')
         except Exception as e:
             db.session.rollback()
-            return f"An error occurred: {e}"
+            flash("This email or phone number already exists!", "error")
             return redirect('/add')
 
     # see all contacts
