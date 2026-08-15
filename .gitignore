@@ -8,3 +8,4 @@ instance/
 .env
 static/*.css
 static/*.css.map
+notes.txt
